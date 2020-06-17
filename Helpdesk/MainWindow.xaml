@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+      <DockPanel Dock="Top" Background="Aqua">
+        <ListBox Name="messages" />
+      </DockPanel>
+      <DockPanel Height="100" Dock="Bottom" Background="Aqua">
 
+
+        <TextBox Name="user" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="message" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DockPanel Height="100" Dock="Bottom" Background="Aqua">
+          <Button Name="connectButton" Content="Connect" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="ConnectClick"/>
+          <Button Name="sendButton"  Content="Send" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="SendClick"/>
+        </DockPanel>
+      </DockPanel>
     </Grid>
 </Window>
