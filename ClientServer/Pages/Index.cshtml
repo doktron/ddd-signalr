@@ -1,21 +1,28 @@
 ﻿@page
-<div class="container">
-	<div class="row">&nbsp;</div>
-	<div class="row">
-		<div class="col-2">User</div>
-		<div class="col-4"><input type="text" id="userInput" /></div>
-	</div>
-	<div class="row">
-		<div class="col-2">Message</div>
-		<div class="col-4"><input type="text" id="messageInput" /></div>
-	</div>
-	<div class="row">&nbsp;</div>
-	<div class="row">
-		<div class="col-6">
-			<input type="button" id="sendButton" value="Send Message" />
+	<div class="container">
+		<div class="row">&nbsp;</div>
+		<div class="row" id="clientRow" style="display: none;">
+			<div class="col-2">Client</div>
+			<div class="col-4"><select id="clientInput"></select></div>
+		</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">
+			<div class="col-2">User</div>
+			<div class="col-4"><input type="text" id="userInput" /></div>
+		</div>
+		<div class="row">
+			<div class="col-2">Message</div>
+			<div class="col-4"><input type="text" id="messageInput" /></div>
+		</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">
+			<div class="col-6">
+				<input type="button" id="sendButton" value="Send Message" />
+				<input type="button" id="registerClientButton" value="Register client" />
+				<input type="button" id="registerHelpdeskButton" value="Register helpdesk" />
+			</div>
 		</div>
 	</div>
-</div>
 <div class="row">
 	<div class="col-12">
 		<hr />
